@@ -1,0 +1,27 @@
+body{
+    margin: 0%;
+    padding: 0%;
+}
+.container{
+    max-width: 90%;
+    height: 100vh;
+}
+.graphs{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.bar-graph{
+        width: 50%;
+        height: 50%;
+}
+
+.pie-graph{
+    width: 30%;
+    height: 10%;
+}
+
+.line-graph{
+    width: 30%;
+    height: 10%;
+}
