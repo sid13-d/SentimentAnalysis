@@ -17,10 +17,10 @@ const Home = () => {
 
     setResults(newsResults);
 
-    const data = await newsResults;
-    const jsonData =   JSON.stringify(data);
-    var blob = new Blob(["[",jsonData,"]"], { type: "application/json" });
-    saveAs(blob, "news.json");
+    // const data = await newsResults;
+    // const jsonData =   JSON.stringify(data);
+    // var blob = new Blob(["[",jsonData,"]"], { type: "application/json" });
+    // saveAs(blob, "news.json");
   };
 
   
@@ -28,7 +28,7 @@ const Home = () => {
   return (
         <div>
           <SearchBar onSearch={handleSearch} />
-          <SearchResults results={results} />
+          {results.length > 0 && <SearchResults results={results} />}
         </div>
   );
 };
